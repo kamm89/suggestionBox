@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Suggestion Box</title>
+		<link href="suggestionBox.css" rel="stylesheet">
+		<script type="text/javascript">
+			function showValue() {
+				var charCount = document.getElementById('text').value;
+				alert("You typed "+charCount.length+" characters (including spaces).");
+				var words = charCount.split(' ');
+				var onlyWords = words.length;
+				alert("You typed "+onlyWords+" words.");
+				var spaces = onlyWords-1
+				var charactersMinusSpaces = charCount.length-spaces
+				alert("You typed "+charactersMinusSpaces+" characters, not incluing spaces.")
+				}
+
+				
+
+
+		</script>
+	</head>
+	<body>
+		<h1>The Suggestion Box... <span style="color:red">that DOES NOT CARE</span>!!!</h1>
+		<p style="font-size: 20px">Go ahead... make a suggestion.<br>I'm not going to consider it at ALL!!!<br>I'm just going to tell you how many characters there are in your suggestion!<p></p><span style="font-size: 22px; color:darkred">Muahahahahahah!!!!</span></p>
+		<form>
+			<textarea id="text" name="area"></textarea>
+			<input type="button" value="Submit" onclick="showValue()">
+		</form>
+	</body>
+</html>
